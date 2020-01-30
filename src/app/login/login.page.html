@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="input-fields">
+    <ion-item>
+      <ion-label position="floating">SSN:</ion-label>
+      <ion-input [(ngModel)]="ssn"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Secret Key</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
+  <ion-button [disabled]="ssn === ''" expand="block">Submit</ion-button>
+</ion-content>
